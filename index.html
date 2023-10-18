@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.43/moment-timezone-with-data-1970-2030.min.js"></script>
+    <title>Timezone</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>
+        World Clock <img
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Rotating_earth_%28large%29_transparent.gif"
+      </h1>
+
+      <select id="city">
+        <option>Select a city...</option>
+        <option value="current">My current location</option>
+        <option value="Europe/London">London</option>
+        <option value="America/New_York">New York</option>
+        <option value="Europe/Paris">Paris</option>
+      </select>
+      <div id="cities">
+        <div class="city" id="los-angeles">
+          <div>
+            <h2>Los Angeles 🇺🇸</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="tokyo">
+          <div>
+            <h2>Tokyo 🇯🇵</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+        <div class="city" id="lisbon">
+          <div>
+            <h2>Lisbon 🇵🇹</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
+      </div>
+
+      <a href="index.html"> All cities</a>
+    </div>
+    <footer>
+      Coded by Y Jongola and it is
+      <a href="https://github.com/yonelajongola/Timezone" target="_blank"
+        >open sourced on Github</a
+      >
+    </footer>
+    <script src="app/script.js"></script>
+  </body>
+</html>
